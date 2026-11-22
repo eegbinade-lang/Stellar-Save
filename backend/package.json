@@ -4,9 +4,9 @@
   "description": "Backend application",
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsx src/index.ts",
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc --noEmit",
+    "start": "node init && tsx src/index.ts",
+    "dev": "node init && tsx watch src/index.ts",
+    "build": "node init && tsc --noEmit",
     "typecheck": "tsc --noEmit",
     "test": "jest",
     "test:integration": "node tests/helpers/runIntegration.js",
